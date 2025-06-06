@@ -1,0 +1,10 @@
+INPUT_NAME: css=[data-testid="input-name"]
+INPUT_EMAIL_REGISTER: css=[data-testid="input-email"]
+INPUT_PASSWORD_REGISTER: id:signup-password
+INPUT_CONFIRM_PASSWORD: id:signup-confirm-password
+RADIO_GESTAO: css=[data-testid="radio-gestao"]
+RADIO_SALAO: css=[data-testid="radio-salao"]
+ALERT_TOAST_REGISTER: css:div[role="alert"]
+BTN_REGISTER: css=[data-testid="signup-button"]
+ALERT_REQUIRED_REGISTER: css:p[class="home_errorText__xwJiK"]
+ALERT_NAME: css=p[class="signup_errorText__VbQDD"]

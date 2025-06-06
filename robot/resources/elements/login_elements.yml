@@ -1,0 +1,8 @@
+INPUT_EMAIL: id:email
+INPUT_PASSWORD: id:password
+BTN_ENTER: css=button[class="styles_button__JXDuS"]
+ALERT_TOAST: css=div[role="alert"]
+ALERT_REQUIRED: css:p[class="home_errorText__xwJiK"]
+LINK_REGISTER: css=a[href="/signup"]
+TITLE_LOGIN: css=h1[class="home_title__RXryj"]
+CLOSE_MSG: css=button[class="Toastify__close-button Toastify__close-button--light"]

@@ -1,0 +1,2 @@
+MSG_WELCOME: css:span[data-testid="user-greeting"]
+BTN_LOGOUT: css=[data-testid="logout-button"]

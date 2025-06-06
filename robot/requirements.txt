@@ -1,0 +1,6 @@
+setuptools
+robotframework==6.1.1
+robotframework-seleniumlibrary==6.2.0
+robotframework-faker
+allure-robotframework==2.13.5
+pyyaml==6.0.2
