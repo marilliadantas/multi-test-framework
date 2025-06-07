@@ -8,11 +8,13 @@ Library      resources/utils/libs/FakerBR.py
 Resource     resources/pages/login_page.robot
 Resource     resources/pages/register_page.robot
 Resource     resources/pages/home_page.robot
+Resource     resources/pages/register_category_page.robot
 
 #Elements
 Variables    resources/elements/login_elements.yml
 Variables    resources/elements/home_elements.yml
 Variables    resources/elements/register_elements.yml
+Variables    resources/elements/register_category_elements.yml
 
 #Utils
 Resource     resources/utils/actions.robot

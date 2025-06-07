@@ -1,0 +1,3 @@
+INPUT_NAME_CATEGORY: css:[data-testid="input-category"]
+BTN_REGISTER_CATEGORY: 'css:[data-testid="cadastrar-button"]'
+ALERT_TOAST_REGISTER: css=div[role="alert"]

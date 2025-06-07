@@ -22,3 +22,5 @@ class FakerBR:
     
     def password(self):
         return Faker('en_US').password()
+    
+    

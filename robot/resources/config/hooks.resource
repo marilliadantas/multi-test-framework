@@ -3,7 +3,7 @@ Resource             ../../base.resource
 
 *** Keywords ***
 Start Browser
-    Open Browser       ${URL}        ${config.Browser}    options=${config.Headless}
+    Open Browser       ${URL}        ${config.Browser}   
     Maximize Browser Window
     
 Finish Browser
