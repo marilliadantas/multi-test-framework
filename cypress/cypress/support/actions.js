@@ -12,6 +12,12 @@ export function click(el) {
   cy.get(el, { timeout: 10000 }).click()
 }
 
+export function clickForce(el) {
+  waitElement(el);
+  cy.get(el).click({ force: true })
+  return click;
+}
+
 export function getText(el, expectedText) {
   waitElement(el);
   cy.get(el, { timeout: 50000 })

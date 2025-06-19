@@ -1,8 +1,12 @@
 import { home } from "../elements/home";
-import { getText } from "../actions";
+import { click, getText } from "../actions";
 
 export default {
     verifySuccessMsg(expectedTxt) {
         getText(home.toastSuccess, expectedTxt)
+    },
+
+    logOut() {
+        click(home.btnLogout)
     }
 }

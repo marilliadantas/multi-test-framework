@@ -28,5 +28,9 @@ export default {
 
     verifyAlertsErrors(messages) {
     getMessages(login.alertRequired, messages);
-  }
+    },
+
+    verifyTitle(title) {
+        getText(login.titleLogin, title)
+    }
 }
