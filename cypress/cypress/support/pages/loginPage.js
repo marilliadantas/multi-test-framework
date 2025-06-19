@@ -18,6 +18,10 @@ export default {
         click(login.btnSubmit)
     },
 
+    accessRegister() {
+        click(login.linkRegister)
+    },
+
     verifyAlertError(expectedTxt) {
         getText(login.toastAlertError, expectedTxt)
     },
