@@ -8,7 +8,7 @@ describe('Login', () => {
     cy.accessSite('/')
   })
 
-  it('Login with success', () => {
+  it('Login with valid credentials', () => {
     login.fillLoginFields(Cypress.env('EMAIL'), Cypress.env('PASSWORD'))
     login.submitLogin()
     home.verifySuccessMsg(msgHome.msgSuccess)
@@ -39,7 +39,6 @@ describe('Login', () => {
   })
 
    it('Login with blank fields', () => {
-    login.fillLoginFields("", "")
     login.submitLogin()
     login.verifyAlertsErrors([
       msgLogin.msgEmailRequired,
