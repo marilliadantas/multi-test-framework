@@ -1,0 +1,11 @@
+{
+    "success": "Cadastro realizado com sucesso!",
+    "nameRequired": "O campo de nome é obrigatório.",
+    "emailRequired": "O campo de e-mail é obrigatório.",
+    "invalidEmail": "Por favor, insira um e-mail válido.",
+    "invalidPassword": "A senha deve conter entre 8 e 12 caracteres, incluindo ao menos uma letra maiúscula, um número e um caractere especial.",
+    "notMatchPassword": "As senhas não coincidem.",
+    "profileUser": "Por favor, selecione o perfil.",
+    "confirmPassRequired": "Confirme sua senha.",
+    "passRequired": "O campo de senha é obrigatório."
+}
