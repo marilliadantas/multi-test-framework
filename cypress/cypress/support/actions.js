@@ -12,6 +12,11 @@ export function click(el) {
   cy.get(el, { timeout: 10000 }).click()
 }
 
+export function checkOption(el, value) {
+  waitElement(el);
+  cy.get(el, { timeout: 10000 }).check(value)
+}
+
 export function clickForce(el) {
   waitElement(el);
   cy.get(el).click({ force: true })

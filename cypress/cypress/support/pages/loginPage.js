@@ -31,7 +31,7 @@ export default {
     },
 
     verifyAlertsErrors(messages) {
-    getMessages(login.alertRequired, messages);
+        getMessages(login.alertRequired, messages);
     },
 
     verifyTitle(title) {
