@@ -1,0 +1,5 @@
+{
+    "invalidCredentials": "Credenciais inválidas. Verifique seu e-mail e senha.",
+    "emailRequired": "O campo de e-mail é obrigatório.",
+    "passRequired": "O campo de senha é obrigatório."
+}
