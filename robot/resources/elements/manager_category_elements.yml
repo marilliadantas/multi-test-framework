@@ -1,0 +1,2 @@
+BTN_DELETE: css:button[class=styles_deleteButton__dCH3O]
+ALERT_SUCCESS: css=div[role="alert"]

@@ -3,32 +3,28 @@ Resource    ../../base.resource
 
 *** Keywords ***
 Access the login screen
-    Go To    ${URL}
+    Go To                    ${URL}
     
 Fill in the login form
-    [Arguments]        ${email}                 ${password}
-    fill               ${INPUT_EMAIL}           ${email}
-    fill               ${INPUT_PASSWORD}        ${password}
+    [Arguments]              ${email}                 ${password}
+    Fill Field               ${INPUT_EMAIL}           ${email}
+    Fill Field               ${INPUT_PASSWORD}        ${password}
 
 Submit the login form
-    click              ${BTN_ENTER}
+    Click On Button          ${BTN_ENTER}
 
 Verify that the following success message
-    [Arguments]      ${msgSuccess}
-    ${txt}           getMessage      ${ALERT_TOAST}
-    Should Be Equal As Strings       ${txt}            ${msgSuccess}
+    [Arguments]              ${msgSuccess}
+    Assert Text              ${ALERT_TOAST}           ${msgSuccess}
     
 Verify that the following error message
-    [Arguments]      ${msgError}
-    ${txt}           getMessage      ${ALERT_TOAST}    
-    Should Be Equal As Strings       ${txt}            ${msgError}
+    [Arguments]              ${msgError}
+    Assert Text              ${ALERT_TOAST}           ${msgError}
 
 Verify that the following required message
-    [Arguments]      ${msgRequired}
-    ${txt}           getMessage        ${ALERT_REQUIRED}    
-    Should Be Equal As Strings         ${txt}            ${msgRequired}
+    [Arguments]              ${msgRequired}
+    Assert Text              ${ALERT_REQUIRED}        ${msgRequired}
 
-Check page title
-    [Arguments]      ${titleExpected}
-    ${title}         getMessage        ${TITLE_LOGIN}    
-    Should Be Equal As Strings         ${title}            ${titleExpected}
+Validate login page title
+    [Arguments]              ${expectedLoginPageTitle}
+    Assert Text              ${TITLE_LOGIN}           ${expectedLoginPageTitle}

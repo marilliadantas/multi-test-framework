@@ -10,4 +10,4 @@ Register Category Successfully
     Click On Register Category Menu
     Fill Category Name                 ${CATEGORY}
     Click On Register
-    Validate Success Message           Categoria cadastrada com sucesso!
+    Validate Success Message           ${MSG_SUCCESS_CATEGORY_REGISTER}

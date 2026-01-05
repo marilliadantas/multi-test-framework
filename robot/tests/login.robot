@@ -2,34 +2,30 @@
 Resource          ../base.resource
 Suite Setup       Start Browser
 Suite Teardown    Finish Browser
+Test Setup        Access the login screen
 
 *** Test Cases ***
 Login with valid credentials
-    Access the login screen
-    Fill in the login form                                 ${EMAIL}               ${PASSWORD}
+    Fill in the login form                                 ${EMAIL}                  ${PASSWORD}
     Submit the login form
-    Verify that the following success message              Login realizado com sucesso!
+    Verify that the following success message              ${LOGIN_SUCCESS_MESSAGE}
 
 Login with invalid email
-    Access the login screen
-    Fill in the login form                                 ${INVALID_EMAIL_}      ${PASSWORD}
+    Fill in the login form                                 ${INVALID_EMAIL}         ${PASSWORD}
     Submit the login form
-    Verify that the following error message                Credenciais inválidas. Verifique seu e-mail e senha.
+    Verify that the following error message                ${INVALID_CREDENTIALS_MESSAGE}
 
 Login with invalid password
-    Access the login screen
-    Fill in the login form                                 ${EMAIL}              ${INVALID_PASSWORD}
+    Fill in the login form                                 ${EMAIL}                  ${INVALID_PASSWORD}
     Submit the login form
-    Verify that the following error message                Credenciais inválidas. Verifique seu e-mail e senha.
+    Verify that the following error message                ${INVALID_CREDENTIALS_MESSAGE}
 
 Login with blank e-mail
-    Access the login screen
-    Fill in the login form                                 ${EMPTY}             ${PASSWORD}
+    Fill in the login form                                 ${EMPTY}                  ${PASSWORD}
     Submit the login form
-    Verify that the following required message             O campo de e-mail é obrigatório.
+    Verify that the following required message             ${EMAIL_REQUIRED_MESSAGE}
 
 Login with blank password
-    Access the login screen
-    Fill in the login form                                 ${EMAIL}             ${EMPTY}
+    Fill in the login form                                 ${EMAIL}                  ${EMPTY}
     Submit the login form
-    Verify that the following required message             O campo de senha é obrigatório.
+    Verify that the following required message             ${PASSWORD_REQUIRED_MESSAGE}

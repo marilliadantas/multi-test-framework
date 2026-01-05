@@ -1,3 +1,5 @@
 MSG_WELCOME: css:span[data-testid="user-greeting"]
-BTN_LOGOUT: css=[data-testid="logout-button"],
+BTN_LOGOUT: css=svg[data-testid="logout-button"]
 BTN_CATEGORY: css:[data-testid="category-link"]
+BTN_MENU: css=a[data-testid="cardapio-link"]
+BTN_REGISTER_MENU: css=a[data-testid="products-link"]

@@ -3,17 +3,20 @@ Resource    ../../base.resource
 
 *** Keywords ***
 Click On Register Category Menu
-    clickText    ${BTN_CATEGORY}
+    Click On Element   ${BTN_CATEGORY}
 
 Fill Category Name
     [Arguments]        ${nameCategory}
-    fill               ${INPUT_NAME_CATEGORY}       ${nameCategory}
+    Fill Field         ${INPUT_NAME_CATEGORY}      ${nameCategory}
 
 Click On Register
-    click    ${BTN_REGISTER_CATEGORY}
+    Click On Element   ${BTN_REGISTER_CATEGORY}
 
 Validate Success Message
-    [Arguments]      ${msgSuccess}
-    click            ${CLOSE_MSG}
-    ${txt}           getMessage      ${ALERT_TOAST_REGISTER}
-    Should Be Equal As Strings       ${txt}            ${msgSuccess}
+    [Arguments]        ${msgSuccess}
+    Click On Element   ${CLOSE_MSG}
+    Assert Text        ${ALERT_TOAST_REGISTER}     ${msgSuccess}
+
+Validate Category Page Title
+    [Arguments]        ${expectedCategory}
+    Wait Text          ${TITLE_CATEGORY}           ${expectedCategory}
